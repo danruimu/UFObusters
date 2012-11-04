@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, UFObusters!</string>
+    <string name="app_name">UFObusters</string>
+    <string-array name="opciones">
+        <item>Ver información en detalle</item>
+        <item>Eliminar avistamiento</item>
+    </string-array>
+    <string-array name="opcionesSINO">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string name="text_dialog">¿Eliminar avistamiento?</string>
+    <string name="titleViewNew">Información del nuevo avistamiento</string>
+    <string name="titleView">Información del avistamiento</string>
+    <string name="placeView">Lugar del avistamiento</string>
+    <string name="coordView">Coordenadas (Latitud, Longitud)</string>
+    <string name="dateView">Fecha del avistamiento</string>
+    <string name="infView">Información extra</string>
+    <string name="hint">Descripción del OVNI</string>
+    <string name="buttonTitle">Guardar avistamiento</string>
+    <string name="about">About</string>
+    <string name="satellite">Cambiar modo de Mapa</string>
+    <string name="nextButtonTitle">Siguiente</string>
+    <string name="backButtonTitle">Anterior</string>
+    <string name="aboutTitleText">Desarrollador: Daniel Ruiz Muñoz</string>
+    <string name="aboutSubTitleText">Gráficos estadísticos creados mediante la librería AndroidPlot (www.androidplot.com)</string>
+    <string name="aboutText">\
+        ¡Disfrute de la aplicación y conviértase en un verdadero UFObuster! 
+		\n\n
+		UFObusters es una aplicación que le permite guardar los avistamientos OVNI que presencie,
+		escuche o simplemente desee recordar.
+		\n\n
+		La aplicación le permite guardar sus avistamientos simplemente punteando en el lugar del
+		mapa donde tuvieron lugar. Puede introducir información adicional de cada avistamiento antes
+		de guardarlo.
+		\n\n
+		Recuerde que para desplazarse por el mapa tan solo tiene que arrastrarlo en diferentes
+		direcciones, o bien, hacer zoom con la técnica del pellizco.
+		\n\n
+		Puede centrar cada avistamiento en el mapa desde la lista de avistamientos guardados,
+		seleccionándolos mediante una pulsación corta con el dedo sobre el avistamiento.
+		Si mantiene pulsado de forma prolongada un avistamiento OVNI guardado, se mostrará un
+		menú de opciones sobre el avistamiento (eliminar o ver información detallada sobre éste).
+		\n\n
+		También dispone de gráficas estadísticas que muestran el número de avistamientos
+		ocurridos durante el mes, pudiendo navegar por los diferentes meses mediante botones que,
+		de no mostrarse por pantalla, son accesibles desplazándose por la pantalla arrastrando el dedo
+		por ella.</string>
+        <string name="aboutInstrText">Instrucciones de funcionamiento</string>
+
+</resources>

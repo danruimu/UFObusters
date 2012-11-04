@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost 
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:id="@+id/tabHost"
+	    xmlns:android="http://schemas.android.com/apk/res/android" >
+    	
+    	<TabWidget
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@android:id/tabs" />
+     
+	    <FrameLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@android:id/tabcontent" >
+		     
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/tab1"
+			    android:orientation="vertical"
+			    android:paddingTop="60dp" >
+			    
+		        <com.google.android.maps.MapView
+		            android:id="@+id/map"
+		            android:apiKey="0LnkDQzBR7dI82AKzEt0zM5FxMYTJX9UJmbmq5Q"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:clickable="true" />
+		    </LinearLayout>
+		
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:id="@+id/tab2"
+			    android:orientation="vertical"
+			    android:paddingTop="60dp" >
+		        
+		        <ListView 
+		            android:id="@+id/list"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent" >
+		        </ListView>
+		    </LinearLayout>
+			
+		    
+		    <LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:id="@+id/tab3"
+				    android:orientation="vertical"
+				    android:paddingTop="60dp" >
+			    
+			    <ScrollView 
+			        android:id="@+id/scrollView"
+			        android:layout_width="match_parent"
+	        		android:layout_height="match_parent"
+	        		android:orientation="vertical" >
+	        		
+			        <LinearLayout 
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="vertical" >
+		    
+			    
+				        <TextView 
+				            android:id="@+id/plotViewTitle"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_marginTop="10dp"
+				            android:gravity="center"
+				            android:textSize="20dp" />
+				        
+				        <com.androidplot.xy.XYPlot
+				            android:id="@+id/plot"
+				            android:layout_width="fill_parent"
+				            android:layout_height="300dp"
+				            android:layout_marginTop="25dp"
+				            title="Avistamientos por días del mes" >
+				        </com.androidplot.xy.XYPlot>
+				        <LinearLayout 
+				            android:orientation="horizontal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center"
+				            android:layout_marginTop="15dp" >
+				            
+				            <Button 
+				                android:id="@+id/backButton"
+				                android:text="@string/backButtonTitle"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginRight="10dp"
+				                android:gravity="center" />
+				            
+				            <Button 
+				                android:id="@+id/nextButton"
+				                android:text="@string/nextButtonTitle"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="10dp"
+				                android:gravity="center" />
+				            
+				        </LinearLayout>
+		       		</LinearLayout>
+		        </ScrollView>
+			</LinearLayout>
+			
+     	</FrameLayout>
+    </TabHost>
