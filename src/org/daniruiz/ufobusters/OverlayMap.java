@@ -53,7 +53,7 @@ public class OverlayMap extends Overlay {
         	}
         	final String addr = address;
             
-            new AlertDialog.Builder(contexto).setTitle("¿Guardar avistamiento en...\n "+address+"?").setItems(R.array.opcionesSINO, new DialogInterface.OnClickListener() {
+            new AlertDialog.Builder(contexto).setTitle("ï¿½Guardar avistamiento en...\n "+address+"?").setItems(R.array.opcionesSINO, new DialogInterface.OnClickListener() {
     			public void onClick(DialogInterface dialogInterface, int i) {
     				if(i==0) {
     					Intent intent = new Intent((UFObusters) contexto, newSight.class);
@@ -65,7 +65,7 @@ public class OverlayMap extends Overlay {
     			}
     		}).show();
         } else {
-        	Toast t = Toast.makeText(contexto, "Lugar no válido", Toast.LENGTH_SHORT);
+        	Toast t = Toast.makeText(contexto, "Lugar no vï¿½lido", Toast.LENGTH_SHORT);
         	t.show();
         }
         return true;
@@ -99,7 +99,7 @@ public class OverlayMap extends Overlay {
         
         Cursor c = myDB.query(TABLE, FROM, null, null, null, null, null);
         
-        //Obtenemos solo la dirección y la fecha
+        //Obtenemos solo la direcciï¿½n y la fecha
         ((UFObusters) context).startManagingCursor(c);
         while(c.moveToNext()) {
         	Pair<Integer, Integer> aux = new Pair<Integer, Integer>(c.getInt(0), c.getInt(1));
